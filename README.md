@@ -29,7 +29,7 @@ Cargo-cult at your own risk. So first, there's bunch of spadework to be done (No
 ```
 sudo bash
 apt-get update
-apt-get -y install curl git redis-server samba avahi-daemon
+apt-get -y install curl git redis-server samba samba-common-bin avahi-daemon
 useradd -s /bin/bash -G admin -m {user}
 mkdir -p /home/share
 chown nobody:nogroup /home/share
@@ -181,6 +181,13 @@ bundle exec guard
 (Note: this will intermittently fail because testing asynchronous things is hard. Hmm, maybe you can help me fix this, too?)
 
 Then write some cukes and some code, and send us a PR!
+
+## Additional reading
+
+This guide only covers setting up the philbot service. Here are some additional guides you may find useful:
+
+- [Connecting a USB hard drive to a raspberry pi](http://raspberrywebserver.com/serveradmin/connect-your-raspberry-pi-to-a-USB-hard-disk.html)
+- [Mounting to a directory](http://www.tldp.org/HOWTO/Hard-Disk-Upgrade/mount.html)
 
 ##License
 
